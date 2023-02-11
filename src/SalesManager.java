@@ -3,7 +3,6 @@ public class SalesManager {
 
     public SalesManager(long[] sales) {
         this.sales = sales;
-        
     }
 
     public long max() {
