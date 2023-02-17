@@ -21,6 +21,7 @@ public class Main {
         for (int i = 0; i < salesCount.length; i++) {
             sum = sum + salesCount[i];
         }
+
         sum = sum - minNumber - maxNumber;
         System.out.println(sum);
 
