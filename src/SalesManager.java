@@ -7,7 +7,7 @@ public class SalesManager {
     }
 
     public int max() {
-        int max = -1;
+        int max = sales[0];
         for (int sale : sales) {
             if (sale > max) {
                 max = sale;
