@@ -7,7 +7,7 @@ public class SalesManager {
     }
 
     public long max() {
-        long max = -1;
+        long max = sales[0];
         for (long sale : sales) {
 
             if (sale > max) {
@@ -16,4 +16,24 @@ public class SalesManager {
         }
         return max;
     }
+
+    public long min() {
+        long min = sales[0];
+        for (long sale : sales) {
+
+            if (sale < min) {
+                min = sale;
+            }
+        }
+        return min;
+    }
+
+    public long getSum(){
+        long sum = 0;
+        for (long sale : sales) {
+            sum +=  sale;
+        }
+        return (sum - max()-min())/(sales.length-2);
+    }
+
 }
